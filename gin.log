@@ -4,24 +4,16 @@
  - using env:	export GIN_MODE=release
  - using code:	gin.SetMode(gin.ReleaseMode)
 
-[GIN-debug] GET    /videos                   --> main.main.func1 (6 handlers)
-[GIN-debug] POST   /video                    --> main.main.func2 (6 handlers)
-[GIN-debug] GET    /                         --> main.main.func3 (6 handlers)
+[GIN-debug] GET    /videos                   --> main.main.func1 (5 handlers)
+[GIN-debug] POST   /video                    --> main.main.func2 (5 handlers)
+[GIN-debug] GET    /                         --> main.main.func3 (5 handlers)
 [GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
 Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
 [GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
 [GIN-debug] Listening and serving HTTP on :8080
-::1 - [12 May 24 20:16 WIB] POST /video 401 14.619µs
-[GIN] 2024/05/12 - 20:16:53 | 401 |      137.47µs |             ::1 | POST     "/video"
-::1 - [12 May 24 20:17 WIB] POST /video 200 1.883045ms
-[GIN] 2024/05/12 - 20:17:06 | 200 |    1.967967ms |             ::1 | POST     "/video"
-::1 - [12 May 24 20:17 WIB] GET /videos 401 10.138µs
-[GIN] 2024/05/12 - 20:17:19 | 401 |     138.123µs |             ::1 | GET      "/videos"
-::1 - [12 May 24 20:17 WIB] GET /videos 200 29.654µs
-[GIN] 2024/05/12 - 20:17:29 | 200 |      83.628µs |             ::1 | GET      "/videos"
-::1 - [12 May 24 20:20 WIB] POST /video 401 6.143µs
-[GIN] 2024/05/12 - 20:20:14 | 401 |     101.893µs |             ::1 | POST     "/video"
-::1 - [12 May 24 20:20 WIB] POST /video 401 11.229µs
-[GIN] 2024/05/12 - 20:20:26 | 401 |      89.602µs |             ::1 | POST     "/video"
-::1 - [12 May 24 20:20 WIB] POST /video 401 4.024µs
-[GIN] 2024/05/12 - 20:20:45 | 401 |      60.377µs |             ::1 | POST     "/video"
+::1 - [13 May 24 05:20 WIB] GET /videos 200 173.078µs
+[GIN] 2024/05/13 - 05:20:31 | 200 |     277.327µs |             ::1 | GET      "/videos"
+::1 - [13 May 24 05:20 WIB] POST /video 200 352.373µs
+[GIN] 2024/05/13 - 05:20:40 | 200 |      424.42µs |             ::1 | POST     "/video"
+::1 - [13 May 24 05:20 WIB] GET /videos 200 21.072µs
+[GIN] 2024/05/13 - 05:20:44 | 200 |        82.2µs |             ::1 | GET      "/videos"
